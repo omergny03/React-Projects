@@ -1,0 +1,47 @@
+.register{
+    margin: 20px;
+}
+
+.form{
+    width: 460px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.form-div{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-checkbox{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.input{
+    border: none;
+    outline:none;
+    width: 400px;
+    background-color: grey;
+    border-bottom: 2px solid black;
+    color: black;
+    
+}
+input::placeholder {
+    color: rgb(83, 81, 81)
+  }
+.button{
+    width: 350px;
+    height: 40px;
+    background-color:orange;
+    border-color: black;
+    cursor: pointer;
+}
+.button:hover{
+     background-color: rgb(168, 126, 50);
+}
