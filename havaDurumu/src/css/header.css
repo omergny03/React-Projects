@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 2px solid grey;
+    padding: 20px;
+    height: 30px;
+  
+
+}
+.header-div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 100vh;
+}
+.header-middle{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+}
+.header-middle:hover{
+    background-color: grey; /* Yazı rengi değişir */
+    font-size: 18px; /* Yazı boyutu büyür */
+    text-decoration: none; /* Altı çizili olur */
+}
+.header-middle-link{
+    text-decoration: none;
+    color: black;
+}
+.header-start{
+    display: flex;
+    align-items: center;
+}
+.header-end{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+.header-end:hover{
+    background-color: grey; /* Yazı rengi değişir */
+    font-size: 18px; /* Yazı boyutu büyür */
+    text-decoration: none; /* Altı çizili olur */
+}
