@@ -1,5 +1,5 @@
 .sunny-bg {
-    background: url('../images/sunny-day.gif') no-repeat center ;
+    background: url('../images/sunny-day.gif') no-repeat center center/cover;
     animation: sunnyAnimation 10s infinite alternate ease-in-out;
   }
   
