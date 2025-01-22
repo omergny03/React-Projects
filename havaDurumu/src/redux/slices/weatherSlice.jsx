@@ -13,7 +13,7 @@ const getWeathersFromStorage = ()=>{
 
 const initialState = {
   weathers:getWeathersFromStorage(),
-  location:"",
+  location:null,
   loading:false,
 }
 

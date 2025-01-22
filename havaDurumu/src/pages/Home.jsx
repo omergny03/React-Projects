@@ -5,6 +5,7 @@ import { TbCloudSearch } from "react-icons/tb";
 import Cards from '../components/Cards';
 import { useDispatch, useSelector } from 'react-redux';
 import { getWeathers } from '../redux/slices/weatherSlice';
+import SelectedDay from '../components/SelectedDay';
 
 function Home() {
   const [location,setLocation] = useState("");
@@ -27,11 +28,7 @@ function Home() {
         fetchData();
       }
   },[run])
-  const getWeatherClass = () => {
-    if (selectedDay.day.condition.text === 'Sunny') return 'sunny-bg';
-    if (selectedDay.day.condition.text === 'Rainy') return 'rainy-bg';
-    return '';
-  };
+
   return (
     <div className='home-genel-div' >
         <div className='input-icon'>
@@ -48,10 +45,10 @@ function Home() {
         
 
          {selectedDay && (
-          <div className={`${getWeatherClass()}`}>
+          <div className='home-data-single-div'>
             {
              
-                <Cards 
+                <SelectedDay 
                 key={selectedDay.date}
                 day={selectedDay}
                 />
