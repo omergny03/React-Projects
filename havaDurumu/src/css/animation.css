@@ -1,15 +1,38 @@
-.sunny-bg {
-    background: url('../images/sunny-day.gif') no-repeat center center/cover;
-    animation: sunnyAnimation 10s infinite alternate ease-in-out;
+
+  .weather-container {
+    position: relative;
+    width: 240px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  @keyframes sunnyAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+  .animation-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Animasyonu arkaya at */
+  }
+  .animation-bg img {
+    filter: brightness(50%); /* Parlaklığı %50 düşür */
+    width: 150%;  /* Genişliği %150 artır */
+  height: 150%; /* Yüksekliği %150 artır */
+  object-fit: cover; /* Taşma olmaması için kapsayıcıya sığdır */
+  }
+  .weather-info {
+    position: relative;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   
-  .rainy-bg {
-    background: url('/images/rainy.gif') no-repeat center center/cover;
+  .weather-info img {
+    width: 80px;
+    margin: 10px 0;
   }
-  

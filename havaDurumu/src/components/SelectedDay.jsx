@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../css/home.css'
 import '../css/animation.css'
 import Lottie from 'lottie-react';
-
+import gif from '../images/gunesli.gif';
 
 function SelectedDay({day}) {
     const [animationData, setAnimationData] = useState(null);
@@ -32,19 +32,20 @@ function SelectedDay({day}) {
             fetchAnimation();
           }, [day]);
 
-  return (
-    <div className='selectedDayStyle'>
-         <h3>{day.date}</h3>
-         <img src={day.day.condition.icon}  />
-         <div><b>{day.day.avgtemp_c} °C</b></div>
-         <div>{day.day.condition.text}</div>
-
-         <div style={{ height: '300px', width: '300px' }}>
-      {animationData && <Lottie animationData={animationData} loop={true} />}
-      <h1>Bugünkü Hava: {day.day.condition.text}</h1>
-    </div>
-    </div>
-  )
+          return (
+            <div className="weather-container">
+              <div className="animation-bg">
+                {/* {animationData && <Lottie animationData={animationData} loop={true} />} */}
+                <img src={gif} alt="" style={{height:'100%',width:'100%'}}/>
+              </div>
+              <div className="weather-info">
+                <h3>{day.date}</h3>
+                <img src={day.day.condition.icon} alt="weather-icon" />
+                <div><b>{day.day.avgtemp_c} °C</b></div>
+                <div>{day.day.condition.text}</div>
+              </div>
+            </div>
+          );
 }
 
 export default SelectedDay
