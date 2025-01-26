@@ -10,10 +10,19 @@ const getWeathersFromStorage = ()=>{
     }
     return null
 }
+const writeLocationToSttorage=(location)=>{
+    localStorage.setItem('location',JSON.stringify(location))
+} 
+const getLocationFromStorage=()=>{
+   if(localStorage.getItem('location')){
+     return JSON.parse(localStorage.getItem('location'))
+   }
+   return null;
+}
 
 const initialState = {
   weathers:getWeathersFromStorage(),
-  location:null,
+  location_state:getLocationFromStorage(),
   loading:false,
 }
 
@@ -28,6 +37,10 @@ export const weatherSlice = createSlice({
     initialState,
     reducers:{
          // http isteği olmazsa 
+         updateLocation:(state,action)=>{
+            state.location_state=action.payload
+            writeLocationToSttorage(state.location_state)
+         }
     },
     extraReducers:(builder)=>{
         // http isteğinde
@@ -43,5 +56,5 @@ export const weatherSlice = createSlice({
     } 
 })
 
-export const {  } = weatherSlice.actions
+export const { updateLocation } = weatherSlice.actions
 export default weatherSlice.reducer

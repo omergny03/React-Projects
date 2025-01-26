@@ -12,7 +12,7 @@ function Header() {
             <div className='header-middle' ><Link to={'/'} className='header-middle-link'>Anasayfa</Link></div>
             <div className='header-middle'><Link to={'/hakkinda'} className='header-middle-link'>Hakkında</Link></div>
         </div>
-        <div className='header-end'>Login</div>
+        <div className='header-end'>Giriş Yap</div>
         
        
     </div>

@@ -3,6 +3,9 @@
     border: none;
     border-bottom: 2px solid grey;
     outline: none;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px
 }
 .input-icon{
     font-size: 30px;
@@ -15,7 +18,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 624px;
+    height: 100%;
+    background-image:url('../images/arkaplan.jpg')
 }
 .home-data-div{
     display: flex;
@@ -23,6 +27,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 10px;
 }
 .home-data-single-div{
     display: flex;
@@ -39,4 +44,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.konum{
+    position: absolute;
+    right: 605px;
+    top: 89px
+}
+.arkaplanimage{
+    background-image: url('../images/arkaplan.jpg');
 }
