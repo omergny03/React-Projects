@@ -1,0 +1,20 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+#root{
+    height: 100%;
+}
+.pay{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.delete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

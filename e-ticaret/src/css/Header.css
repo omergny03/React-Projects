@@ -1,0 +1,55 @@
+.header{
+    width: 100%;
+    height: 100px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header-logo{
+    width: 100px;
+    height: 100px;
+}
+.header-input{
+  border-color: rgb(176, 154, 7);
+  border-radius: 8px;
+  padding: 5px;
+  outline: none;    /* tıkladığın zaman çerçeve çıkmaz */
+  margin-right: 10px;
+}
+.header-nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+li{
+    
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: larger;    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    margin: 16px;
+}
+
+.link{
+    text-decoration:none;
+    color: rgb(176, 154, 7);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

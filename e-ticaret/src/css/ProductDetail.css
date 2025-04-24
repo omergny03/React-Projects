@@ -1,0 +1,28 @@
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 350px;
+    height: 440px;
+    margin-left: 25px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.count{
+   font-size: 30px;
+   cursor: pointer;
+}
+.count:hover{
+    background-color: lightgray;
+}
